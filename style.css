@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    text-align: start;
+    font-size: 2rem;
+}
+
+header {
+    margin: 4rem 0 2rem 0;
+}
+
+header > p {
+    margin: 2rem 0 0 0;
+    color: rgb(139, 139, 139);
+}
+
+label, header > p {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+    outline: 2px solid red;
+    display: flex;
+}
+
+main > div {
+    position: relative;
+    width: max(40rem, 50%);
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+}
+
+main > div > div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+main > div > span {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    color: black;
+}
+
+
+#main-title {
+    color: rgb(201, 201, 201);
+}
+
+main > section {
+    width: 100%;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+form > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 2rem;
+    margin-bottom: 10px;
+}
+
+li > label {
+    position: relative;
+    letter-spacing: 1px;
+}
+
+li > input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15rem;
+    height: 1.8rem;
+    margin: 5px 0;
+    padding: 0 2px;
+    border: 1px solid rgba(169, 169, 169, 0.685);
+    border-width: 0 0 1px 0;
+}
+
+li > input:focus {
+    outline: none;
+    border-bottom-width: 3px;
+}
+
+/* li > input:focus:invalid {
+    border-color: indianred;
+} */
+
+/* li > input:valid {
+    border-color: green;
+} */
+
+.passwordFieldInvalid {
+    background-color: rgba(224, 92, 92, 0.582);
+    border-color: red !important;
+}
+
+.passwordNotIdentical::before {
+    position: absolute;
+    width: max-content;
+    content: "Password not identical";
+    font-size: 11px;
+    top: 3.4rem;
+    color: indianred;
+}
+
+.inputInvalid {
+    border-color: indianred;
+}
+
+.inputValid {
+    border-color: green;
+}
+
+form > button {
+    align-self: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+form > button:hover {
+    background-color: lightgray;
+}
+
+form > button:active {
+    background-color: darkgray;
+}
