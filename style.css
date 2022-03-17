@@ -121,14 +121,6 @@ li > input:focus {
     border-bottom-width: 3px;
 }
 
-/* li > input:focus:invalid {
-    border-color: indianred;
-} */
-
-/* li > input:valid {
-    border-color: green;
-} */
-
 .passwordFieldInvalid {
     background-color: rgba(224, 92, 92, 0.582);
     border-color: red !important;
@@ -166,4 +158,8 @@ form > button:hover {
 
 form > button:active {
     background-color: darkgray;
+}
+
+form > p {
+    align-self: center;
 }
